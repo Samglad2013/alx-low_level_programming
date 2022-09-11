@@ -8,16 +8,11 @@
 int main(void)
 {
 char c = 'a';
-char C = 'A';
 while (c <= 'z')
 {
+if (c != 'q' && c != 'e')
 putchar(c);
-c++;	
-}
-while (C <= 'Z')
-{
-putchar(C);
-C++;
+c++;
 }
 putchar('\n');
 return (0);
