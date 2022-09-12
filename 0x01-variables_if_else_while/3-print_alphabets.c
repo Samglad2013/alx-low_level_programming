@@ -12,8 +12,7 @@ char C = 'A';
 while (c <= 'z')
 {
 putchar(c);
-c++;
-}
+c++;										}
 while (C <= 'Z')
 {
 putchar(C);
