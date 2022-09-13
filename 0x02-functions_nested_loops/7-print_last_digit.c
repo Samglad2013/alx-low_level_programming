@@ -20,6 +20,6 @@ else
 {
 last_digit = n % 10;
 _putchar(last_digit + 48);
-return (last_digit);		
+return (last_digit);
 }
 }

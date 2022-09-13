@@ -1,24 +1,20 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ * _islower - checks whether or not a character is lowercase
+ * @c: integer representing ascii value of character
+ * Return: 1 if it is lowercase or 0 otherwise
  */
-int main(void)
+
+int _islower(int c)
 {
-char c = 'a';
-char C = 'A';
-while (c <= 'z')
+if (c >= 97 && c <= 123)
 {
-putchar(c);
-c++;
+return (1);
 }
-while (C <= 'Z')
+else
 {
-putchar(C);
-C++;
-}
-putchar('\n');
 return (0);
 }
+}
+
