@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * print 100_times_table - Print the `n` times table, starting with 0.
+ * print 100-times_table - Print the `n` times table, starting with 0.
  * Description: If `n` is greater than 15 or less than 0, print nothing.
  * @n: int type number
  */
 
-void print 100_times_table(int n);
+void print 100-times_table(int n);
 {
 int x = 0, y, z;
 if (n > 15 || n < 0)
