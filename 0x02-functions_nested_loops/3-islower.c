@@ -1,12 +1,24 @@
-#include "main.h"
-int _islower(int c)
+#include <stdio.h>
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
 {
-if (c >= 97 && c <= 123)
+char c = 'a';
+char C = 'A';
+while (c <= 'z')
 {
-return (1);
+putchar(c);
+c++;
 }
-else
+while (C <= 'Z')
 {
+putchar(C);
+C++;
+}
+putchar('\n');
 return (0);
-}
 }
