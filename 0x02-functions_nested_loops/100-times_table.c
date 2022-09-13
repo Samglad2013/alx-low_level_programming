@@ -39,7 +39,7 @@ _putchar(z + '0');
 if (y != n)
 {
 _putchar(',');
-_putchar(',');
+_putchar(' ');
 }
 }
 _putchar('\n');
