@@ -17,7 +17,9 @@ if (src[i] == '\0')
 {
 for (j = i; j < n && dest[j] != '\0'; j++)
 dest[j] = '\0';
-break;										}										dest[i] = src[i];
+break;
+}
+dest[i] = src[i];
 }
 return (dest);
 }
