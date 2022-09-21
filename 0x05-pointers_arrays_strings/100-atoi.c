@@ -15,7 +15,8 @@ char now;
 index = 0;
 res = 0;
 while (*(s + index) != '\0')
-{													now = *(s + index);
+{
+now = *(s + index);
 if (now == '-')
 {
 sign *= -1;
@@ -27,12 +28,11 @@ while (*(s + ind2) > 47 && *(s + ind2) < 58)
 {
 res = (res * 10) + *(s + ind2) - '0';
 ind2++;
-																																											}
-																														break;c																																}
-																			index++;
-																				}
-									if (sign < 0)
-												res *= sign;
-										return (res);
-
+}
+break;																}
+index++;
+}
+if (sign < 0)
+res *= sign;
+return (res);
 }
