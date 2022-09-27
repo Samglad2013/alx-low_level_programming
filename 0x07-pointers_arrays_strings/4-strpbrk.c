@@ -1,13 +1,22 @@
 #include "main.h"
 
 /**
- * set_string - sets the value of a pointer to a char
+ * _strpbrk - locates first occurence of any bytes from accept in s
  *
- * @s: double pointer
- * @to: pointer
- * Return: void
+ * @s: string to work on
+ * @accept: pattern to match against
+ * Return: pointer to the first match
  */
-void set_string(char **s, char *to)
+char *_strpbrk(char *s, char *accept)
 {
-*s = to;
+int i, j;
+for (i = 0; s[i] != '\0'; i++)
+{
+for (j = 0; accept[j] != '\0'; j++)
+{
+if (s[i] == accept[j])
+return (s + i);
+}
+}
+return (NULL);
 }
