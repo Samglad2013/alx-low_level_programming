@@ -5,7 +5,7 @@
  *
  * @s: string
  * Return: int
- *      */
+ */
 int is_palindrome(char *s)
 {
 int len = _strlen_recursion(s), i = 0;
@@ -35,8 +35,8 @@ return (len + 1);
  * @s: string
  * @len: length of string
  * @i: counter variable
- *  Return: int
- *        */
+ * Return: int
+ */
 int palindrome_check(char *s, int len, int i)
 {
 if (len == i)
